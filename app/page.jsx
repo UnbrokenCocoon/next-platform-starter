@@ -25,10 +25,11 @@ export default function Home() {
               View Projects
             </a>
             <a
-              href="/cv"
+              href="/CV & Portfolio.pdf"
+              download
               className="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition"
             >
-              Download CV (PDF)
+              Download CV
             </a>
           </div>
         </section>
@@ -66,15 +67,32 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Publications */}
+        {/* Publications & Writing */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Recent Publications</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Publications & Writing</h2>
           <ul className="space-y-4 text-gray-700">
+            <li>
+              <a
+                href="/Service, Solidarity, and Self-Help.pdf"
+                target="_blank"
+                className="text-indigo-600 hover:underline font-medium"
+              >
+                Service, Solidarity, and Self-Help: Samuel Smiles and the Rhetoric of Self-Improvement
+              </a>
+            </li>
+            <li>
+              <a
+                href="/RAG_LLM_Dialogue.pdf"
+                target="_blank"
+                className="text-indigo-600 hover:underline font-medium"
+              >
+                RAG & LLM Dialogue Systems: Designing Agentic Conversations
+              </a>
+            </li>
             <li>
               <a
                 href="https://arxiv.org/abs/2508.19099"
                 target="_blank"
-                rel="noreferrer"
                 className="text-indigo-600 hover:underline font-medium"
               >
                 Beyond the black box: Integrating lexical and semantic methods in quantitative discourse analysis with BERTopic
@@ -84,7 +102,6 @@ export default function Home() {
               <a
                 href="https://arxiv.org/abs/2507.23364"
                 target="_blank"
-                rel="noreferrer"
                 className="text-indigo-600 hover:underline font-medium"
               >
                 Holistic evaluations of topic models
@@ -93,30 +110,31 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* Links */}
-        <section className="text-center">
-          <p className="text-gray-600">
-            <a href="https://github.com/ThomasCompton" target="_blank" className="text-indigo-600 hover:underline">GitHub</a> │
-            <a href="https://linkedin.com/in/thomascompton" target="_blank" className="text-indigo-600 hover:underline"> LinkedIn</a> │
-            <a href="https://medium.com/@thomascompton" target="_blank" className="text-indigo-600 hover:underline"> Medium</a>
-          </p>
+        {/* Certifications */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Certifications</h2>
+          <div className="border rounded-lg p-6 bg-white shadow-sm">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Hugging Face Beginner Certificate</h3>
+            <p className="text-gray-600 mb-4">
+              Completed Stage 1 of Hugging Face's LLM Course, covering fundamentals of transformers, prompting, and fine-tuning.
+            </p>
+            <img
+              src="/image.webp"
+              alt="Hugging Face Beginner Certificate"
+              className="border rounded-lg max-w-xs mx-auto"
+            />
+            <p className="text-sm text-gray-500 mt-4 text-center">
+              <a
+                href="/image.webp"
+                target="_blank"
+                className="text-indigo-600 hover:underline"
+              >
+                View full-size
+              </a>
+            </p>
+          </div>
         </section>
-      </div>
-    </div>
-  );
-}
 
-function ProjectCard({ title, desc, link, skills }) {
-  return (
-    <div className="border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition">
-      <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600 mb-4">{desc}</p>
-      <p className="text-sm text-gray-500 mb-4">
-        <strong>Skills:</strong> {skills}
-      </p>
-      <a href={link} className="text-indigo-600 hover:underline text-sm">
-        Explore project →
-      </a>
-    </div>
-  );
-}
+        {/* Links */}
+        <section className="text-center mb-12">
+          <p className="text
